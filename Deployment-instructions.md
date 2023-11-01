@@ -3,21 +3,20 @@
 </p>
 
 ## Deployment Instructions:
-1. Follow the naming convention below for all resources created in AWS:
+1. Here are your group roles:
 ```
-VPC:
-- deplpoyment#-vpc-region, example: deployment6-vpc-east
-Instances:
-- Function#-region, example: applicationServer01-east, applicationServer02-east
-Security Groups:
-- purposeSG, example: HttpAcessSG
-Subnets:
-- purposeSubnet#, example: publicSubnet01
-Load Balancer:
-- purpose-region, example: ALB-east
+Role Manager:
+- This role is responsible for making sure everyone is working on their part of the deployment and managing the time for each deliverable. Also, this role is responsible for the main repository.
+
+Chief Architect:
+- This role is responsible for the creation of the diagram and creating the Terraform files.
+
+System Administrator:
+- This role is responsible for the creation of the container images and ECS.
+
 ```
-2.  Use Terraform to create 2 instances in your default VPC for a Jenkins manager and agent architecture (see below for more information)
-3. The following must be installed:
+2. Everyone is responsible for documentation  
+3. Create a Jenkins manager and agent architecture:
 ```
 Instance 1:
 - Jenkins, software-properties-common, add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv, build-essential, libmysqlclient-dev, python3.7-dev
