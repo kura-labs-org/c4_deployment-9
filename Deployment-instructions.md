@@ -6,7 +6,8 @@
 1. Here are your group roles:
 ```
 Role Manager:
-- This role is responsible for making sure everyone is working on their part of the deployment and managing the time for each deliverable. Also, this role is responsible for the main repository.
+- This role is responsible for making sure everyone is working on their part of the deployment, managing the time for each deliverable, and this role is responsible for the main repository.
+- Also, creating a Jira board and inviting team members to it
 
 Chief Architect:
 - This role is responsible for the creation of the diagram and creating the Terraform files.
