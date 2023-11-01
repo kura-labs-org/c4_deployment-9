@@ -14,6 +14,7 @@ Demonstrate your ability to work within a group to deploy an e-commerce applicat
 - Document your progress in a .md file in your repository. Also, document any issues you may run into and what you did to fix them.
 
 - Make sure your documentation includes these sections:
+  - 
   - Purpose
   - Issues
   - Steps
