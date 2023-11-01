@@ -3,7 +3,8 @@
 </p>
 
 ## Deployment Instructions:
-1. Here are your group roles:
+1. **Everyone is responsible for submitting the main repository link and updating the main repository**  
+2. Here are your group roles:
 ```
 Role Manager:
 - This role is responsible for making sure everyone is working on their part of the deployment, managing the time for each deliverable, and this role is responsible for the main repository.
@@ -16,7 +17,7 @@ System Administrator:
 - This role is responsible for the creation of the container images and ECS.
 
 ```
-2. Everyone is responsible for documentation  
+2. Ever 
 3. Create a Jenkins manager and agent architecture:
 ```
 Instance 1:
