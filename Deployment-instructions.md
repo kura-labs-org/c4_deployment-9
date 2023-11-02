@@ -59,20 +59,17 @@ Instance 3:
 3. Create a Docker image of the Backend on a T.2 medium:
 ```
 Follow these steps
-- sudo apt install -y software-properties-common
-- sudo add-apt-repository -y ppa:deadsnakes/ppa
-- sudo apt install python3.9-venv
+- Python 3.9 required 
 - git clone {Your repo}
 - cd backend
+- install requirements.txt
 - python manage.py migrate
 - python manage.py runserver 0.0.0.0:8000
 ```
 4. Create a Docker image of the frontend on a T.2 medium (The frontend runs on port 3000):
 ```
 Follow these steps
-- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-- export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-- nvm install 10
+- node 10 required
 - git clone {Your repo}
 - cd frontend
 - npm install
