@@ -2,7 +2,7 @@
 <img src="https://github.com/kura-labs-org/kuralabs_deployment_1/blob/main/Kuralogo.png">
 </p>
 
-## Deployment Instructions:
+## Group Instructions:
 1. **Everyone is responsible for submitting the main repository link and updating the main repository**  
 2. Here are your group roles:
 ```
@@ -17,43 +17,66 @@ System Administrator:
 - This role is responsible for the creation of the container images and ECS.
 
 ```
-2. Ever 
-3. Create a Jenkins manager and agent architecture:
+3. Here are your groups:
+```
+Role Manager:
+- This role is responsible for making sure everyone is working on their part of the deployment, managing the time for each deliverable, and this role is responsible for the main repository.
+- Also, creating a Jira board and inviting team members to it
+
+Chief Architect:
+- This role is responsible for the creation of the diagram and creating the Terraform files.
+
+System Administrator:
+- This role is responsible for the creation of the container images and ECS.
+
+```
+
+*********************************************************************************************************************************************************************
+## Deployment Instructions:
+
+1. Create a Jenkins manager and agent architecture:
 ```
 Instance 1:
-- Jenkins, software-properties-common, add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv, build-essential, libmysqlclient-dev, python3.7-dev
-Instance 2:
+- Jenkins, Docker pipeline plugin
+Instance 2 (T.2 medium):
+- Docker and default-jre 
+Instance 3:
 - Terraform and default-jre
 ```
-4. Create two VPCs with Terraform, 1 VPC in US-east-1 and the other VPC in US-west-2. **MUST** have the following components in each VPC:
+2. Create an ECS and VPC Terraform file with the following components listed below:
     - 2 AZ's
     - 2 Public Subnets
-    - 2 EC2's
+    - 2 Containers for the frontend
+    - 1 Container for the backend
     - 1 Route Table
-    - Security Group Ports: 8000 and 22     
-5. Create a user data script that will install the dependencies below and deploy the Banking application:
+    - Security Group Ports: 8000, 3000 and 22
+    - 1 ALB    
+3. Create a Docker image of the Backend on a T.2 medium:
 ```
-- The following must be installed for the application to run: software-properties-common, add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv, build-essential, libmysqlclient-dev, python3.7-dev
-- Once you activate the virtual environment, the following must be installed: pip install mysqlclient, pip install gunicorn
+Follow these steps
+- sudo apt install -y software-properties-common
+- sudo add-apt-repository -y ppa:deadsnakes/ppa
+- sudo apt install python3.9-venv
+- git clone {Your repo}
+- cd backend
+- python manage.py migrate
+- python manage.py runserver 0.0.0.0:8000
 ```
-6. Now create an RDS database: [instructions here](https://scribehow.com/shared/How_to_Create_an_AWS_RDS_Database__zqPZ-jdRTHqiOGdhjMI8Zw)
-7. Change the following MySQL endpoints to your endpoints for each file listed below:
-   - The red, blue, and green areas of the DATABASE_URL you'll need to edit:
-       ![image](https://github.com/kura-labs-org/c4_deployment-6/blob/main/format.png)
-   - database.py:
-     ![image](https://github.com/kura-labs-org/c4_deployment-6/blob/main/database.png)
-     
-   - load_data.py
-     ![image](https://github.com/kura-labs-org/c4_deployment-6/blob/main/load.png)
-     
-   - app.py
-     ![image](https://github.com/kura-labs-org/c4_deployment-6/blob/main/app.png)
-     
-8. **Note:** Once you've deployed the application the first time, you will not need to load the database files again (database.py and load_data.py)
-9. Configure your AWS credentials in Jenkins: [instructions here](https://scribehow.com/shared/How_to_Securely_Configure_AWS_Access_Keys_in_Jenkins__MNeQvA0RSOWj4Ig3pdzIPw)
-10. Now place your Terraform files and user data script in the intTerraform directory
-11. Create a multibranch pipeline and run the Jenkinsfile 
-12. Check your infrastructures and applications
-15. Once you've deployed to both regions, create an application load balancer for US-east-1 and US-west-2: [instructions here](https://scribehow.com/shared/Creating_Load_Balancer_with_Target_Groups_for_EC2_Instances__WjPUNqE4SLCpkcYRouPjjA)
-16. With both infrastructures deployed, is there anything else we should add to our infrastructure?  
+4. Create a Docker image of the frontend on a T.2 medium:
+```
+Follow these steps
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+- export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+- nvm install 10
+- git clone {Your repo}
+- cd frontend
+- npm install
+- npm start
+```
+5. Deploy the backend first, once it's deployed, copy the private IP address  
+6. Place the private address in the pacakage.json file. Replace the current IP on line 4 to your private IP
+7. Deploy the frontend
+8. Check your infrastructures and applications
+9. What is the application stack of this application?
+10. Is the backend an API server?  
 
