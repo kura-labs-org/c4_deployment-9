@@ -67,7 +67,7 @@ Follow these steps
 - python manage.py migrate
 - python manage.py runserver 0.0.0.0:8000
 ```
-4. Create a Docker image of the frontend on a T.2 medium:
+4. Create a Docker image of the frontend on a T.2 medium (The frontend runs on port 3000):
 ```
 Follow these steps
 - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
