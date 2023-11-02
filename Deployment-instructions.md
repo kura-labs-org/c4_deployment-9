@@ -78,9 +78,9 @@ Follow these steps
 - npm install
 - npm start
 ```
-5. Deploy the backend first, once it's deployed, copy the private IP address  
+5. Create a Jenkinsfile and deploy the backend first, once it's deployed, copy the private IP address  
 6. Place the private address in the pacakage.json file. Replace the current IP on line 4 to your private IP
-7. Deploy the frontend
+7. Create another Jenkinsfile and deploy the frontend
 8. Check your infrastructures and applications
 9. What is the application stack of this application?
 10. Is the backend an API server?  
