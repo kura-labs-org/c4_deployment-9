@@ -19,15 +19,20 @@ System Administrator:
 ```
 3. Here are your groups:
 ```
-Role Manager:
-- This role is responsible for making sure everyone is working on their part of the deployment, managing the time for each deliverable, and this role is responsible for the main repository.
-- Also, creating a Jira board and inviting team members to it
-
-Chief Architect:
-- This role is responsible for the creation of the diagram and creating the Terraform files.
-
-System Administrator:
-- This role is responsible for the creation of the container images and ECS.
+Group 1:
+- Danielle, Kevin G, Joeseph
+Group 2:
+- Aubrey, Nehemiah, Darrielle
+Group 3:
+- Annie, Jorge, Sameen
+Group 4:
+- Kevin E, Belinda, Ethan
+Group 5:
+- Dwayne, Saraswati, Andrew
+Group 6:
+- Khalil, Luis, Nalani
+Group 7:
+- Brittney, Dolma
 
 ```
 
