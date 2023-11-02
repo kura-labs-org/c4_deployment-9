@@ -4,17 +4,18 @@
 
 ## Group Instructions:
 1. **Everyone is responsible for submitting the main repository link and updating the main repository**  
-2. Here are your group roles:
+2. Each person in a group must pick one role from below:
 ```
 Project Manager:
 - This role is responsible for making sure everyone is working on their part of the deployment, managing the time for each deliverable, and this role is responsible for the main repository.
-- Also, creating a Jira board and inviting team members to it
+- Creating a Jira board and inviting team members to it
 
 Chief Architect:
 - This role is responsible for the creation of the diagram and creating the Terraform files.
 
 System Administrator:
 - This role is responsible for the creation of the container images and ECS.
+- Create AWS user accounts for each member of your group
 
 ```
 3. Here are your groups:
