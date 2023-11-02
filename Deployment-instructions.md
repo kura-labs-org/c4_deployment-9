@@ -6,7 +6,7 @@
 1. **Everyone is responsible for submitting the main repository link and updating the main repository**  
 2. Here are your group roles:
 ```
-Role Manager:
+Project Manager:
 - This role is responsible for making sure everyone is working on their part of the deployment, managing the time for each deliverable, and this role is responsible for the main repository.
 - Also, creating a Jira board and inviting team members to it
 
