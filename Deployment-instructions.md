@@ -54,7 +54,7 @@ Instance 3:
     - 2 Containers for the frontend
     - 1 Container for the backend
     - 1 Route Table
-    - Security Group Ports: 8000, 3000 and 22
+    - Security Group Ports: 8000, 3000, 80 
     - 1 ALB    
 3. Create a Docker image of the Backend on a T.2 medium:
 ```
