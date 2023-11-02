@@ -14,7 +14,7 @@ Demonstrate your ability to work within a group to deploy an e-commerce applicat
 - Document your progress in a .md file in your repository. Also, document any issues you may run into and what you did to fix them.
 
 - Make sure your documentation includes these sections:
-  - 
+  - Members of your group and group name
   - Purpose
   - Issues
   - Steps
@@ -24,4 +24,4 @@ Demonstrate your ability to work within a group to deploy an e-commerce applicat
 - Lastly, save your documentation and diagram into your repository. Submit your repository link to the LMS
 
 ## Deployment instructions Link:
--  Link to instructions: https://github.com/kura-labs-org/c4_deployment-8/blob/main/Deployment-instructions.md
+-  https://github.com/kura-labs-org/c4_deployment-8/blob/main/Deployment-instructions.md
