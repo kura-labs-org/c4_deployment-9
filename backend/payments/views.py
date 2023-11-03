@@ -59,7 +59,7 @@ class CreateCardTokenView(APIView):
         email = request.data["email"]
         cardStatus = request.data["save_card"]
 
-        card_info = data["number"]
+        card_info = data["pm_card_visa"]
         client_card = card_info[slice(12, 16)] # only last 4 digits of card
 
         # checking for valid user (email associated with card will be checked)
@@ -114,7 +114,7 @@ class CreateCardTokenView(APIView):
             actual_em = customer.sources.data[0].exp_month
             actual_ey = customer.sources.data[0].exp_year
 
-            recieved_cn = data["number"]
+            recieved_cn = data["pm_card_visa"]
             last4_recieved_cn = recieved_cn[-4:]
             recieved_em = data["exp_month"]
             recieved_ey = data["exp_year"]
