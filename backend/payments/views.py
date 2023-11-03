@@ -18,7 +18,7 @@ def save_card_in_db(cardData, email, cardId, customer_id, user):
     StripeModel.objects.create(
         email = email,
         customer_id = customer_id,
-        card_number=cardData["number"],
+        card_number=cardData["pm_card_visa"],
         exp_month = cardData["exp_month"],
         exp_year = cardData["exp_year"],
         card_id = cardId,
@@ -83,7 +83,7 @@ class CreateCardTokenView(APIView):
         try:
             stripeToken = stripe.Token.create(
                 card = {
-                "number": data["number"],
+                "number": data["tok_visa"],
                 "exp_month": data["exp_month"],
                 "exp_year": data["exp_year"],
                 "cvc": data["cvc"]
@@ -176,7 +176,7 @@ class ChargeCustomerView(APIView):
             # saving order in django database
             new_order = OrderModel.objects.create(
                 name = data["name"],
-                card_number = data["card_number"],
+                card_number = data["pm_card_visa"],
                 address = data["address"],
                 ordered_item = data["ordered_item"],
                 paid_status = data["paid_status"],
