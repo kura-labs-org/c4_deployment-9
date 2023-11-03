@@ -40,7 +40,7 @@ Group 7:
 *********************************************************************************************************************************************************************
 ## Deployment Instructions:
 
-1. Create a Python script that will automatically push to Github but check all files in the current directory for sensitive information such as AWS secret keys and AWS access keys and will return back to the terminal a message saying what document the sensitive information is in and what the sensitive information is. Also, stops the script from pushing to Github
+1. Create a Python script that will automatically push to Github but check all files in the current directory for sensitive information such as AWS secret keys and AWS access keys and will return back to the terminal a message saying what document the sensitive information is in and what the sensitive information is. Also, it stops the script from being pushed to GitHub
 2.  Create a Jenkins manager and agent architecture:
 ```
 Instance 1:
