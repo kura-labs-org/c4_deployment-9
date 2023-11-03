@@ -9,7 +9,7 @@ from datetime import datetime
 
 
 # stripe secret test key
-stripe.api_key="sk_test_51O8ASSBrtuGZph5T2iINsqNrdrYr4028rGKMvYG9PZqvBSBpNVc4Bd6RryYwbbAtwklJ0UllCVHsi57QQHVYCPwy008WEBfNAq"
+stripe.api_key="rk_test_51O8ASSBrtuGZph5TOR61B1gl3HwZ2LsoBJO3IwN6a1TsIWCbv77WgjEbjDE1FqEWZ48oSupOdHhD74UqZ04NtWL200gBTM4oFm"
 
 
 def save_card_in_db(cardData, email, cardId, customer_id, user):
