@@ -76,7 +76,7 @@ Follow these steps
 - npm install
 - npm start
 ```
-5. Create a Jenkinsfile and deploy the backend first, once it's deployed, copy the private IP address  
+5. Create a Jenkinsfile and deploy the backend to ECS first, once it's deployed, copy the private IP address from the ECS console  
 6. Place the private address in the pacakage.json file. Replace the current IP on line 4 to your private IP
 7. Create another Jenkinsfile and deploy the frontend
 8. Check your infrastructures and applications
