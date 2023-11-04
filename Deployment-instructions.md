@@ -29,10 +29,10 @@ System Administrator:
 Group 1: Danielle, Kevin G, Jo
 Group 2: Aubrey, Nehemiah, Darrielle
 Group 3: Annie, Jorge, Sameen
-Group 4: Kevin E, Belinda, Ethan
+Group 4: Kevin E, Ethan, Khalil
 Group 5: Dwayne, Saraswati, Andrew
-Group 6: Khalil, Luis, Nalani
-Group 7: Brittney, Dolma
+Group 6: Luis, Nalani
+Group 7: Brittney, Dolma, Belinda
 
 ```
 
