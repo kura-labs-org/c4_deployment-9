@@ -83,7 +83,7 @@ class CreateCardTokenView(APIView):
         try:
             stripeToken = stripe.Token.create(
                 card = {
-                "number": data["pm_card_visa"],
+                "number": data["number"],
                 "exp_month": data["exp_month"],
                 "exp_year": data["exp_year"],
                 "cvc": data["cvc"]
