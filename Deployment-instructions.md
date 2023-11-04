@@ -49,7 +49,7 @@ Instance 2 (T.2 medium):
 Instance 3:
 - Terraform and default-jre
 ```
-2. Create an ECS and VPC Terraform file with the following components listed below:
+3. Create an ECS and VPC Terraform file with the following components listed below:
     - 2 AZ's
     - 2 Public Subnets
     - 2 Containers for the frontend
@@ -57,7 +57,7 @@ Instance 3:
     - 1 Route Table
     - Security Group Ports: 8000, 3000, 80 
     - 1 ALB    
-3. Create a Docker image of the Backend on a T.2 medium:
+4. Create a Docker image of the Backend on a T.2 medium:
 ```
 Follow these steps
 - Python 3.9 required 
@@ -67,7 +67,7 @@ Follow these steps
 - python manage.py migrate
 - python manage.py runserver 0.0.0.0:8000
 ```
-4. Create a Docker image of the frontend on a T.2 medium (The frontend runs on port 3000):
+5. Create a Docker image of the frontend on a T.2 medium (The frontend runs on port 3000):
 ```
 Follow these steps
 - node 10 required
@@ -76,10 +76,10 @@ Follow these steps
 - npm install
 - npm start
 ```
-5. Create a Jenkinsfile to deploy the backend ECS Terraform files first, once it's deployed, copy the private IP address from the ECS console  
-6. Place the private address in the pacakage.json file. Replace the current IP on line 4 to your private IP
-7. Create another Jenkinsfile to deploy the ECS Terraform frontend files
-8. Check your infrastructures and applications
-9. What is the application stack of this application?
-10. Is the backend an API server?  
+6. Create a Jenkinsfile to deploy the backend ECS Terraform files first, once it's deployed, copy the private IP address from the ECS console  
+7. Place the private address in the pacakage.json file. Replace the current IP on line 4 to your private IP
+8. Create another Jenkinsfile to deploy the ECS Terraform frontend files
+9. Check your infrastructures and applications
+10. What is the application stack of this application?
+11. Is the backend an API server?  
 
