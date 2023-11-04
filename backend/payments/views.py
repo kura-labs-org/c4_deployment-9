@@ -59,7 +59,7 @@ class CreateCardTokenView(APIView):
         email = request.data["email"]
         cardStatus = request.data["save_card"]
 
-        card_info = data["pm_card_visa"]
+        card_info = data["number"]
         client_card = card_info[slice(12, 16)] # only last 4 digits of card
 
         # checking for valid user (email associated with card will be checked)
