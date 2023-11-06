@@ -17,8 +17,8 @@ spec:
         track: stable
     spec:
       containers:
-      - image: ecom-app
-        name: tsanderson77/ecom:backend
+      - image: tsanderson77/ecom:backend
+        name: ecom-app
         ports:
          - name: http
            containerPort: 8000
