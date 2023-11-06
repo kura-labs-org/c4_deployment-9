@@ -56,7 +56,7 @@ spec:
         track: stable
     spec:
       containers:
-      - image: tsanderson77/ecom:backend
+      - image: tsanderson77/ecom:frontend
         name: ecom-app
         ports:
          - name: http
