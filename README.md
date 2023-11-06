@@ -24,4 +24,4 @@ Demonstrate your ability to work within a group to deploy an e-commerce applicat
 - Lastly, save your documentation and diagram into your repository. Submit your repository link to the LMS
 
 ## Deployment instructions Link:
--  https://github.com/kura-labs-org/c4_deployment-8/blob/main/Deployment-instructions.md
+-  https://github.com/kura-labs-org/c4_deployment-9/blob/main/Deployment-instructions.md
