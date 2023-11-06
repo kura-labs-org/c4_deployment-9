@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">C4_deployment-8<h1> 
 
-Demonstrate your ability to work within a group to deploy an e-commerce application to ECS.
+Demonstrate your ability to work within a group to deploy an e-commerce application to EKS.
 
 - Create a separate GitHub repository for this application 
 

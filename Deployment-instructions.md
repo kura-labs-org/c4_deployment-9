@@ -39,7 +39,7 @@ Group 7: Brittney, Dolma, Belinda
 *********************************************************************************************************************************************************************
 ## Deployment Instructions:
 
-1. Create a Python script that will automatically push to Github but check all files in the current directory for sensitive information such as AWS secret keys and AWS access keys and will return back to the terminal a message saying what document the sensitive information is in and what the sensitive information is. Also, it stops the script from being pushed to GitHub
+1. Create a Python script that will email the team when the pipline is done or send an SMS to your team via Twilio 
 2.  Create a Jenkins manager and agent architecture:
 ```
 Instance 1:
@@ -47,39 +47,18 @@ Instance 1:
 Instance 2 (T.2 medium):
 - Docker and default-jre 
 Instance 3:
-- Terraform and default-jre
+- Kubectl, EKS and default-jre
 ```
-3. Create an ECS and VPC Terraform file with the following components listed below:
-    - 2 AZ's
-    - 2 Public Subnets
-    - 2 Containers for the frontend
-    - 1 Container for the backend
-    - 1 Route Table
-    - Security Group Ports: 8000, 3000, 80 
-    - 1 ALB    
-4. Create a Docker image of the Backend on a T.2 medium:
-```
-Follow these steps
-- Python 3.9 required 
-- git clone {Your repo}
-- cd backend
-- install requirements.txt
-- python manage.py migrate
-- python manage.py runserver 0.0.0.0:8000
-```
-5. Create a Docker image of the frontend on a T.2 medium (The frontend runs on port 3000):
-```
-Follow these steps
-- node 10 required
-- git clone {Your repo}
-- cd frontend
-- npm install
-- npm start
-```
-6. Create a Jenkinsfile to deploy the backend ECS Terraform files first, once it's deployed, copy the private IP address from the ECS console  
-7. Place the private address in the pacakage.json file. Replace the current IP on line 4 to your private IP
-8. Create another Jenkinsfile to deploy the ECS Terraform frontend files
-9. Check your infrastructures and applications
-10. What is the application stack of this application?
-11. Is the backend an API server?  
+3. Edit the following in the Deployment yaml manifest for this application:
+    - 
+    - 
+    - 
+    - 
+    - 
+    -  
+    -     
+4. Use your Docker image of the Backend and Frontend form Deployment 8:
+6. Edit the Jenkinsfile to deploy your application to EKS 
+7. Observe the steps taken to deploy the ALB 
+
 
