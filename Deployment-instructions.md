@@ -19,7 +19,8 @@ Chief Architect:
 - Work on creating both Jenkinsfile with other members
 
 System Administrator:
-- Create the Docker container images for ECS 
+- Create the Docker container images for EKS
+- Create the Kubernetes manifest
 - Create AWS user accounts for each member of your group to access your account with
 - Work on creating both Jenkinsfile with other members
 
