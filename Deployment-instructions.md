@@ -40,25 +40,26 @@ Group 7: Brittney, Dolma, Belinda
 ## Deployment Instructions:
 
 1. Create a Python script that will email the team when the pipline is done or send an SMS to your team via Twilio 
-2.  Create a Jenkins manager and agent architecture:
+2. Create a Jenkins manager and agent architecture:
 ```
 Instance 1:
 - Jenkins, Docker pipeline plugin
 Instance 2 (T.2 medium):
 - Docker and default-jre 
 Instance 3:
-- Kubectl, EKS and default-jre
+- Kubectl, EKS and default-jre (Install your cluster and add the loadbalancer)
 ```
-3. Edit the following in the Deployment yaml manifest for this application:
-    - 
-    - 
-    - 
-    - 
-    - 
-    -  
-    -     
-4. Use your Docker image of the Backend and Frontend form Deployment 8:
-6. Edit the Jenkinsfile to deploy your application to EKS 
-7. Observe the steps taken to deploy the ALB 
+3. Create a VPC with the following components:
+    - 2 Public subnets
+    - 2 Private subnets
+    - Internet Gateway
+    - Nat Gateway  
+4. Create a deployment and services manifest for the E-commerce application:
+    - Create a service and deployment for the backend
+    - Create a service and deployment for the frontend     
+6. Make sure your cluster is created and the Jenkins agent is connected to the cluster
+7. Use your Docker image of the Backend from Deployment 8
+8. Create the frontend image but place the selector:app:name into the package.json file
+9. Now deploy the EKS files with Jenkins
 
 
