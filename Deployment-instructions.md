@@ -39,7 +39,7 @@ Group 7: Brittney, Dolma, Belinda
 *********************************************************************************************************************************************************************
 ## Deployment Instructions:
 
-1. Create a Python script that will email the team when the pipline is done or send an SMS to your team via Twilio 
+1. Create a Python script that will email the team when the pipeline is done
 2. Create a Jenkins manager and agent architecture:
 ```
 Instance 1:
