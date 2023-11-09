@@ -46,7 +46,7 @@ Instance 1:
 - Jenkins, Docker pipeline plugin
 Instance 2 (T.2 medium):
 - Docker and default-jre 
-Instance 3:
+Instance 3 (T.2 medium):
 - Kubectl, EKS and default-jre (Install your cluster and add the loadbalancer)
 ```
 3. Create a VPC with the following components:
