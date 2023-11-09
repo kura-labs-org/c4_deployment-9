@@ -24,16 +24,17 @@ System Administrator:
 - Create AWS user accounts for each member of your group to access your account with
 - Work on creating both Jenkinsfile with other members
 
+Data Engineer:
+- ?
+
 ```
-3. Here are your groups:
+3. Here are your groups and roles:
 ```
-Group 1: Danielle, Kevin G, Jo
-Group 2: Aubrey, Nehemiah, Darrielle
-Group 3: Annie, Jorge, Sameen
-Group 4: Ethan, Khalil, Luis
-Group 5: Dwayne, Saraswati, Andrew
-Group 6: Nalani, Kevin E
-Group 7: Brittney, Dolma, Belinda
+1. Aubrey- Data, Nehemiah- Manager, Darrielle- Chief Architect, Jo- System Admin, Nalani- System Admin
+2. Annie- Data, Jorge- Manager, Sameen- Chief Architect, Kevin E- System Admin
+3. Ethan- Manager, Khalil- Data, Luis- System Admin, Danielle- Chief Architect
+4. Dwayne- System Admin, Saraswati- Data, Andrew- Manager, Kevin G- Chief Architect
+5. Brittney-System Admin, Dolma- Manager, Belinda- Chief Architect
 
 ```
 
