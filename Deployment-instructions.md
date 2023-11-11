@@ -57,7 +57,16 @@ Instance 3 (T.2 medium):
     - Nat Gateway  
 4. Create a deployment and services manifest for the E-commerce application:
     - Create a service and deployment for the backend
-    - Create a service and deployment for the frontend     
+    - Create a service and deployment for the frontend
+      ```
+        Follow these steps
+        - node 10 required
+        - git clone {Your repo}
+        - cd frontend
+        - npm install --save-dev @babel/plugin-proposal-private-property-in-object
+        - npm install
+        - npm start
+      ```   
 6. Make sure your cluster is created and the instance 3 is connected to the cluster
 7. Create your ALB controller: [instructions here](https://docs.google.com/document/d/1Y_c_ByV8y9I1CL8NJvZLqo6ftahcJJD5qG0WA_PkqTM/edit?usp=sharing)
 8. Use your Docker image of the Backend from Deployment 8
