@@ -64,6 +64,6 @@ Instance 3 (T.2 medium):
 8. Use your Docker image of the Backend from Deployment 8
 9. Create the frontend image and place the service name into the package.json file
 10. Now deploy the EKS files with Jenkins
-11. [Install Cloudwatch Agent on AWS EKS] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-setup-EKS-addon.html)
+11. [Install Cloudwatch Agent on AWS EKS](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-setup-EKS-addon.html)
 
 
