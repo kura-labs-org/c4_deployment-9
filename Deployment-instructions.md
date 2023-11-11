@@ -63,7 +63,7 @@ Instance 3 (T.2 medium):
 7. Create your ALB controller: [instructions here](https://docs.google.com/document/d/1Y_c_ByV8y9I1CL8NJvZLqo6ftahcJJD5qG0WA_PkqTM/edit?usp=sharing)
 8. Use your Docker image of the Backend from Deployment 8
 9. Create the frontend image and place the service name into the package.json file
-10. Now deploy the EKS files with Jenkins
+10. Now have Jenkins create the docker image and deploy to EKS
 11. [Install Cloudwatch Agent on AWS EKS](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-setup-EKS-addon.html)
 
 
