@@ -59,10 +59,11 @@ Instance 3 (T.2 medium):
 4. Create a deployment and services manifest for the E-commerce application:
     - Create a service and deployment for the backend
     - Create a service and deployment for the frontend     
-6. Make sure your cluster is created and the Jenkins agent is connected to the cluster
-7. Use your Docker image of the Backend from Deployment 8
-8. Create the frontend image but place the selector:app:name into the package.json file
-9. Now deploy the EKS files with Jenkins
-10. [Install Cloudwatch Agent on AWS EKS] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-setup-EKS-addon.html)
+6. Make sure your cluster is created and the instance 3 is connected to the cluster
+7. Create your ALB controller: [instructions here](https://docs.google.com/document/d/1Y_c_ByV8y9I1CL8NJvZLqo6ftahcJJD5qG0WA_PkqTM/edit?usp=sharing)
+8. Use your Docker image of the Backend from Deployment 8
+9. Create the frontend image and place the service name into the package.json file
+10. Now deploy the EKS files with Jenkins
+11. [Install Cloudwatch Agent on AWS EKS] (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-setup-EKS-addon.html)
 
 
