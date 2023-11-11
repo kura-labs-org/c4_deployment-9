@@ -11,18 +11,17 @@ Project Manager:
 - Manage the time for each deliverable
 - Create the main deployment repo in GitHub (and invite team members to it)
 - Create a Jira board (and invite team members to it)
-- Work on creating both Jenkinsfile with other members
 
 Chief Architect:
 - Create the deployment diagram
 - Create the Terraform files
-- Work on creating both Jenkinsfile with other members
+- Create the ALB controller
+- Create the Cloudwatch Agent on AWS EKS
 
 System Administrator:
 - Create the Docker container images for EKS
 - Create the Kubernetes manifest
 - Create AWS user accounts for each member of your group to access your account with
-- Work on creating both Jenkinsfile with other members
 
 Data Engineer:
 - See "DataOps Engineer Instructions" below
