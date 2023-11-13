@@ -57,7 +57,7 @@ Instance 3 (T.2 medium):
 
     eksctl create nodegroup --cluster cluster02 --node-type t2.medium --nodes 2
 
-- The above commands will allow you create your nodes on a t2.medium instad of a m5.large
+- The above commands will allow you to create t2.medium nodes instad of a m5.large nodes
 ```
 3. Create a VPC with the following components:
     - 2 Public subnets
