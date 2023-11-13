@@ -51,7 +51,7 @@ Instance 3 (T.2 medium):
 - Kubectl, EKS and default-jre (Manually install your cluster and add the loadbalancer)
 - Please run the following command for creating your cluster:
 
-    eksctl create cluster cluster01  --vpc-private-subnets=subnet-02d4cc65e8dde7a07,subnet-0952efd7d50fc7f11  --vpc-public-s       ubnets=subnet-003ea84136dc93f2e,subnet-0bcb542a46061faa1 --without-nodegroup
+    eksctl create cluster cluster01  --vpc-private-subnets=subnet-02d4cc65e8dde7a07,subnet-0952efd7d50fc7f11  --vpc-public-subnets=subnet-003ea84136dc93f2e,subnet-0bcb542a46061faa1 --without-nodegroup
 
     And then:
 
