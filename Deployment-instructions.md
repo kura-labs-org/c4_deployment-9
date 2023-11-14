@@ -40,7 +40,7 @@ Data Engineer:
 *********************************************************************************************************************************************************************
 ## DevOps Deployment Instructions:
 
-1. Create a Python script that will send a Slack message to your group chat when the Jenkins pipeline is done.
+1. Create a Python script to send a Slack message to your group chat when the Jenkins pipeline is done.
 2. Create a Jenkins manager and agent architecture:
 ```
 Instance 1:
@@ -49,15 +49,15 @@ Instance 2 (T.2 medium):
 - Docker and default-jre 
 Instance 3 (T.2 medium):
 - Kubectl, EKS and default-jre (Manually install your cluster and add the loadbalancer)
-- Please run the following command for creating your cluster:
+- Please run the following command to create your cluster:
 
-    eksctl create cluster cluster01  --vpc-private-subnets=subnet-02d4cc65e8dde7a07,subnet-0952efd7d50fc7f11  --vpc-public-subnets=subnet-003ea84136dc93f2e,subnet-0bcb542a46061faa1 --without-nodegroup
+    eksctl create cluster cluster01  --vpc-private-subnets="your-subnets"  --vpc-public-subnets="your-subnets"--without-nodegroup
 
-    And then:
+    And then after the cluster creates:
 
     eksctl create nodegroup --cluster cluster02 --node-type t2.medium --nodes 2
 
-- The above commands will allow you to create t2.medium nodes instad of a m5.large nodes
+- The above commands will allow you to create t2.medium nodes instead of a m5.large nodes
 ```
 3. Create a VPC with the following components:
     - 2 Public subnets
