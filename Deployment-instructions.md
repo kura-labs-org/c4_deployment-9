@@ -4,7 +4,7 @@
 
 ## Group Instructions:
 1. **Everyone is responsible for submitting the main repository link and updating the main repository**  
-2. Each person in a group must pick one role from below:
+2. Each person in a group has a role:
 ```
 Project Manager:
 - Make sure everyone is working on their part of the deployment
