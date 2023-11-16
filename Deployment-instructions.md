@@ -55,7 +55,7 @@ Instance 3 (T.2 medium):
 
     And then after the cluster creates:
 
-    eksctl create nodegroup --cluster cluster02 --node-type t2.medium --nodes 2
+    eksctl create nodegroup --cluster cluster02 --node-private-networking --node-type t2.medium --nodes 2
 
 - The above commands will allow you to create t2.medium nodes instead of a m5.large nodes
 ```
